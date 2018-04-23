@@ -1,4 +1,4 @@
-=========================================== READ ME ===========================================
+==================================== READ ME ====================================
 
 Tal projeto consiste na descriptografia de mensagens incluídas em imagens de extensão ppm e pgm. Para execução correta do projeto deve-se executar o projeto, dentro de seu diretório seguindo os seguintes passos:
 

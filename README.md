@@ -1,6 +1,6 @@
 ==================================== READ ME ====================================
 
-Tal projeto consiste na descriptografia de mensagens incluídas em imagens de extensão ppm e pgm. Para execução correta do projeto deve-se executar o projeto, dentro de seu diretório seguindo os seguintes passos:
+Tal projeto consiste na descriptografia de mensagens incluídas em imagens de extensão ppm (Keyword Cipher) e pgm (Caesar Cipher). Para execução correta do projeto deve-se executá-lo dentro de seu diretório seguindo os seguintes passos:
 
 1.make clean
 2.make

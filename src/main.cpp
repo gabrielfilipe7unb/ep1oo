@@ -41,7 +41,7 @@ int main(){
 					getline(cin,enderecoEntrada);
 					imagem_pgm.leituraDeImagem(enderecoEntrada);
 
-					cout<<imagem_pgm.decifraMensagem()<<endl;
+					cout<<imagem_pgm.decifrador()<<endl;
 
 					break;
 
@@ -50,7 +50,7 @@ int main(){
 
 					getline(cin,enderecoEntrada);
 					imagem_ppm.leituraDeImagem(enderecoEntrada);
-					imagem_ppm.decifraMensagem();
+					imagem_ppm.decifrador();
 
 					break;
 			}

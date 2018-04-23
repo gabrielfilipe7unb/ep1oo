@@ -24,16 +24,16 @@ int Imagem::getLargura(){
 int Imagem::getPixelMax(){
   return pixelMax;
 }
+string Imagem::getReconhecimentoImagem(){
+	return reconhecimentoImagem;
+}
 
-string Imagem::getCodigoImagem(){
+unsigned char *Imagem::getCodigoImagem(){
   return codigoImagem;
 }
+
 string Imagem::getComentario(){
   return comentario;
-}
-
-unsigned char *Imagem::getCodigo(){
-  return codigo;
 }
 
 //MÉTODO PARA LEITURA DE DADOS DA IMAGEM
@@ -50,11 +50,11 @@ void Imagem::leituraDeImagem(string endereco){
   }
   else{
 
-    getline(file,codigoImagem); //LEITURA DA PRIMEIRA LINHA DO CABEÇALHO DO ARQUIVO;
+    getline(file,reconhecimentoImagem); //LEITURA DA PRIMEIRA LINHA DO CABEÇALHO DO ARQUIVO;
 
-    if (codigoImagem == "P2" || codigoImagem == "P5") //IDENTIFICAÇÃO DO TIPO DE IMAGEM PGM;
+    if (reconhecimentoImagem == "P2" || reconhecimentoImagem == "P5") //IDENTIFICAÇÃO DO TIPO DE IMAGEM PGM;
       dimensoes = 1;
-    else if (codigoImagem == "P3" || codigoImagem == "P6") //IDENTIFICAÇÃO DO TIPO DE IMAGEM PPM;
+    else if (reconhecimentoImagem == "P3" || reconhecimentoImagem == "P6") //IDENTIFICAÇÃO DO TIPO DE IMAGEM PPM;
       dimensoes = 3;
 
     file.get(caractere); //LEITURA DA SEGUNDA LINHA DO CABEÇALHO DO ARQUIVO;
@@ -65,10 +65,10 @@ void Imagem::leituraDeImagem(string endereco){
     file >> altura >> largura >> pixelMax; //LEITURA DA TERCEIRA E QUARTA LINHA DO CABEÇALHO DO ARQUIVO;
     file.get();
 
-    codigo = new unsigned char [altura*largura*dimensoes];
+    codigoImagem = new unsigned char [altura*largura*dimensoes];
 
     for(int i = 0; file.get(caractere); i++)
-      codigo[i] = caractere;
+      codigoImagem[i] = caractere;
 
     file.close();
 

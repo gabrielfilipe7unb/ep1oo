@@ -24,11 +24,11 @@ class PPM : public Imagem{
 
     char *decifrador();
 
-    void setTamanhoTotalMensagem(int TamanhoTotalMensagem);
-    void setComecoMensagem(int ComecoMensagem);
+    void setTamanhoTotalMensagem(int tamanhoTotalMensagem);
+    void setComecoMensagem(int comecoMensagem);
 		void setParametros();
     void setAlfabeto();
-		char *decifrador();
+		
 };
 
 #endif

@@ -15,10 +15,10 @@ class Imagem{
     int largura;
     int pixelMax;
 
-    string codigoImagem;
+    unsigned char *codigoImagem;
     string comentario;
+    string reconhecimentoImagem;
 
-    unsigned char *codigo;
 
 
   public:
@@ -33,11 +33,10 @@ class Imagem{
     int getLargura();
     int getPixelMax();
     int getDimensoes();
+    string getReconhecimentoImagem();
 
-    string getCodigoImagem();
+    unsigned char *getCodigoImagem();
     string getComentario();
-
-    unsigned char *getCodigo();
 
     //MÉTODO PARA LEITURA DE DADOS DA IMAGEM
     void leituraDeImagem(string endereco);

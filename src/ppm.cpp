@@ -1,8 +1,10 @@
 #include "ppm.hpp"
+
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <cstring>
+
 using namespace std;
 
 PPM::PPM(){
@@ -96,11 +98,11 @@ char *PPM::decifrador(){
 			letra = 32;
     else
     	letra = numCodigo[i] + 96; //RECONHECE AS LETRAS MINUSCULAS DE ACORDO COM A TABELA ASCII
-      
+
     for(int j = 0; j < 27; j++){ //COMPARA COM O ALFABETO USUAL
     	if(letra == letrasAlfabeto[j])
     		posicao_letra = j;
-    		}
+		}
     		if(posicao_letra == 0)
     			mensagem[i] = 32; //RECONHECE O ESPAÇO
     		else

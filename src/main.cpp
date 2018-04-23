@@ -40,8 +40,7 @@ int main(){
 
 					getline(cin,enderecoEntrada);
 					imagem_pgm.leituraDeImagem(enderecoEntrada);
-
-					cout<<imagem_pgm.decifrador()<<endl;
+					imagem_pgm.decifrador();
 
 					break;
 

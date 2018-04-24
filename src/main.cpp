@@ -17,7 +17,7 @@ int main(){
 
 	cout<<endl;
 	cout<<"====================== Decifrador de Mensagens de Imagem ======================"<<endl<<endl;
-	cout<<"================ Qual tipo é o tipo de imagem PGM[1] ou PPM[2]? ==============="<<endl<<endl;
+	cout<<"=========== Qual é o tipo de imagem PGM[1] ou PPM[2] que deseja ler? ==========="<<endl<<endl;
 	cout<<"Resposta: ";
 	cin>>tipo;
 	cout<<endl;
@@ -26,7 +26,7 @@ int main(){
 	while(tipo < 0 || tipo > 2 ) {
 	cout<<endl;
 	cout<<"===================== ERRO! DIGITE NOVAMENTE SUA RESPOSTA ====================="<<endl<<endl;
-	cout<<"================ Qual tipo é o tipo de imagem PGM[1] ou PPM[2]? ==============="<<endl<<endl;
+	cout<<"=========== Qual é o tipo de imagem PGM[1] ou PPM[2] que deseja ler? ==========="<<endl<<endl;
 	cout<<"Resposta: ";
 	cin>>tipo;
 	cout<<endl;
